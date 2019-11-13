@@ -1148,7 +1148,7 @@ html.magnifying>body {
 
 .slick-list.dragging {
     cursor: pointer;
-    cursor: hand
+    cursor: hand;
 }
 
 .slick-slider .slick-list,
@@ -1319,15 +1319,6 @@ html {
     overflow-x: hidden
 }
 
-@supports (-ms-ime-align:auto) {
-    html {
-        overflow-x: hidden
-    }
-    html img {
-        -ms-interpolation-mode: bicubic
-    }
-}
-
 body {
     height: 100%;
     color: #333;
@@ -1341,11 +1332,6 @@ body {
     line-height: 2em
 }
 
-@supports (-ms-ime-align:auto) {
-    body {
-        overflow-x: hidden
-    }
-}
 
 a,
 a:focus,
@@ -3521,14 +3507,6 @@ html.browser-lt-edge .component-call-to-action.-image-rollover .overlay {
 .component-coloured-text.sixty-thirty .image.jpg img {
     width: 100%
 }
-
-@supports (-ms-ime-align:auto) {
-    .component-coloured-text.lined .image.jpg img,
-    .component-coloured-text.sixty-thirty .image.jpg img {
-        width: 100%
-    }
-}
-
 .component-coloured-text.lined .image.png img,
 .component-coloured-text.lined .image.svg img,
 .component-coloured-text.sixty-thirty .image.png img,
@@ -6024,13 +6002,6 @@ html.browser-lt-edge .component-call-to-action.-image-rollover .overlay {
     width: 100%;
     position: relative
 }
-
-@supports (-ms-ime-align:auto) {
-    .component-magnifying-image .fade-mode .view .image {
-        max-height: inherit
-    }
-}
-
 .component-magnifying-image .fade-mode .view .image:first-child,
 .component-magnifying-image .fade-mode .view:first-child {
     position: relative
@@ -6747,14 +6718,7 @@ li .sub-nav li a {
     z-index: 99;
     background: transparent;
     max-height: 100vh;
-    overflow-y: auto
-}
-
-@supports (-ms-ime-align:auto) {
-    .desktop-slider_overlay .overlay-menu,
-    .mobile-slider_overlay .overlay-menu {
-        overflow: hidden
-    }
+    overflow-y: visible;
 }
 
 .desktop-slider_overlay .overlay-menu .side-menu-container,
@@ -6988,13 +6952,6 @@ li .sub-nav li a {
     bottom: 40px;
     right: 5%;
     color: #fff
-}
-
-@supports (-ms-ime-align:auto) {
-    .desktop-slider_overlay .overlay-menu .social,
-    .mobile-slider_overlay .overlay-menu .social {
-        right: -180px
-    }
 }
 
 .desktop-slider_overlay .overlay-menu .social ul,
@@ -7389,12 +7346,6 @@ li .sub-nav li a {
     display: block;
     height: auto;
     padding-right: 5%
-}
-
-@supports (-ms-ime-align:auto) {
-    .mm-overlay .inner .wrap {
-        padding-bottom: 50px
-    }
 }
 
 .mm-overlay .inner .wrap h3 {
@@ -8209,12 +8160,6 @@ li .sub-nav li a {
     -webkit-backface-visibility: hidden
 }
 
-@supports (-ms-ime-align:auto) {
-    .slider-nav .slider-wrapper .slides li .inner {
-        display: inline-block
-    }
-}
-
 .slider-nav .slider-wrapper .slides li .inner .background {
     position: relative;
     top: 0;
@@ -8746,9 +8691,9 @@ li .sub-nav li a {
     position: absolute;
     left: 0;
     bottom: 0;
-    opacity: 0;
+    opacity: 1 !important;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    visibility: hidden
+    visibility: inherit !important;
 }
 
 .captions-full ul {
@@ -10756,11 +10701,6 @@ li .sub-nav li a {
     .component-magnifying-image .select-view ul {
         width: auto
     }
-    @supports (-ms-ime-align:auto) {
-        .component-magnifying-image .select-view ul {
-            margin-left: 4%
-        }
-    }
     .component-magnifying-image .select-view ul:before {
         position: relative;
         top: auto;
@@ -12341,142 +12281,6 @@ li .sub-nav li a {
 @media (max-width:833.436686097px) {
     .f81 {
         font-size: 35px
-    }
-}
-
-@media not all and (min-resolution:0.001dpcm) {
-    @supports (-webkit-appearance: none) {
-        .component-coloured-text .inner h4, .component-coloured-text.lined .title, .component-coloured-text.sixty-thirty .title, .heading2 {
-            font-weight: 200
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-coloured-text .inner a,
-        .component-coloured-text .inner a.left,
-        .component-coloured-text .inner a.left span,
-        .component-coloured-text .inner a.right,
-        .component-coloured-text .inner a.right span,
-        .component-coloured-text .inner a:first-child,
-        .component-coloured-text .inner a:first-child span,
-        .component-coloured-text .inner a span,
-        .component-expanding-cta .inner .caption .subtitle {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-expanding-cta .inner .caption h4 {
-            font-weight: 100
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-form h4,
-        .mm-overlay .wrap h4 {
-            font-weight: 200
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .wpcf7-submit,
-        .wpcf7-submit span {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .wpcf7-submit {
-            font-weight: 400!important
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-header-banner .caption .inner .subtitle {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-header-banner .caption .inner h4 {
-            font-weight: 100
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-header-banner .caption .inner button,
-        .component-header-banner .caption .inner button span,
-        .component-magnifying-image .select-view ul:before,
-        .component-magnifying-image .select-view ul li button,
-        .component-magnifying-image .select-view ul li button span {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .mm-overlay .inner .wrap h3 {
-            font-weight: 300
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .mm-overlay .inner .wrap .form-wrap .wpcf7-submit,
-        .mm-overlay .inner .wrap .form-wrap .wpcf7-submit span {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .mm-overlay .inner .wrap .form-wrap .wpcf7-submit {
-            font-weight: 400!important
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-pinned-text .inner h2,
-        .component-pinned-text .inner h3,
-        .component-pinned-text .inner h4,
-        .component-pinned-text .inner h5 {
-            font-weight: 200
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-process h2 {
-            font-weight: 100
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-process .steps .step .inner .title {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .component-process .steps .step .inner .section-title {
-            font-weight: 300
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .captions-full ul li .seo-title,
-        .captions-full ul li .subtitle span,
-        .slider-nav .section-wrap,
-        .slider-nav .slider-wrapper .slides li .append p,
-        .slider-nav .slider-wrapper .slides li .append span {
-            font-weight: 400
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .captions-full ul li h4 {
-            font-weight: 100
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .captions-full ul li p em {
-            font-weight: 100;
-            font-style: normal;
-            display: block;
-            -webkit-transform: skew(-10deg);
-            -ms-transform: skew(-10deg);
-            transform: skew(-10deg)
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .captions-full ul li h5 {
-            font-weight: 100
-        }
-    }
-    @supports (-webkit-appearance:none) {
-        .captions-full ul li button,
-        .captions-full ul li button span {
-            font-weight: 400
-        }
     }
 }
 
